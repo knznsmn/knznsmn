@@ -1,18 +1,16 @@
+
+# Codes For Days
+
 - 👋 Hi, I’m @knznsmn
 - 👀 I’m interested in coding...
 - 🌱 I’m currently learning JavaScript and C/C++...
 
-### :hammer_and_wrench: Languages and Tools :
-
+## :hammer_and_wrench:
 
 <div>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="20" height="20"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="20" height="20"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="20" height="20"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="20" height="20"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL"  alt="MySQL" width="20" height="20"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="20" height="20"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="20" height="20"/>
+  <img src="./assets/svg/html.svg" title="HTML" alt="HTML" width="16" height="16"/>&nbsp;
+  <img src="./assets/svg/css.svg"  title="CSS" alt="CSS" width="16" height="16"/>&nbsp;
+  <img src="./assets/svg/js.svg" title="JavaScript" alt="JavaScript" width="16" height="16"/>&nbsp;
 </div>
 
 <!---
