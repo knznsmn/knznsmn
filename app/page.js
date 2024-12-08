@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <main className={styles.container}>
       <h1 className={styles.title}>knznsmn</h1>
-      <p className={styles.description}>Graphic Designer,</p>
-      <p className={styles.description}>Web Developer</p>
+      <p className={styles.description}>Graphic Design</p>
+      <p className={styles.description}>Web Development</p>
 
     </main>  
   );
