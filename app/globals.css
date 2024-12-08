@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cardo';
+  src: url('/fonts/Cardo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Colors */
+  --hue-viol: hsla(338, 100%, 29%, 1);
+  --hue-roug: hsla(337, 83%, 43%, 1);
+  --hue-rose: hsla(337, 50%, 72%, 1);
+  --hue-pink: hsla(338, 33%, 87%, 1);
+  --hue-army: hsla(88, 100%, 30%, 1);
+  --hue-vert: hsla(88, 83%, 45%, 1);
+  --hue-lime: hsla(88, 50%, 75%, 1);
+  --hue-jour: hsla(88, 33%, 90%, 1);
+
+  --background: var(--hue-lime);
+  --foreground: var(--hue-viol);
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--hue-viol);
+    --foreground: var(--hue-lime);
+  }
+}
+/* Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* General Styling */
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Cardo', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
