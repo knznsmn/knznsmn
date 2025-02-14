@@ -1,27 +1,93 @@
 .container {
+  text-align: center;
+}
+.container .gauche {
+  width: 50%;
+}
+.container .droite {
+  width: 100%;
+}
+.container p {
+  padding: 1rem;
+}
+.title {
+  width: 100vw;
+  font-size: 4rem;
+  font-weight: 700;
+  opacity: 0.7;
+  letter-spacing: -.25rem;
+  margin-bottom: -2rem;
+}
+
+/* Section Style */
+.portfolio, .about, .skills, .projects {
+  width: 100vw;
   min-height: 100vh;
-  background-image:
-  radial-gradient( circle farthest-corner at 10% 30%,
-  var(--hue-viol) 0%,
-  var(--hue-rose) 90%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  opacity: 0.7;
-  letter-spacing: -.25rem;
+.portfolio {
+  background-image:
+  radial-gradient( circle farthest-corner at 10% 30%,
+  var(--hue-vert) 0%,
+  var(--hue-noir) 90%);
+  color: var(--hue-noir);
 }
-.description {
-  font-weight: 400;
-  opacity: 0.8;
+
+.about img {
+  min-width: 5rem;
+  height: 100%;
+  margin: auto;
 }
-.description:nth-child(1) {
-  font-size: 1.8rem;
+.about h1 {
+  font-size: 1.5rem;
 }
-.description:nth-child(2) {
-  font-size: 1.2rem;
+
+.skills {
+  background-image:
+  radial-gradient( circle farthest-corner at 10% 30%,
+  var(--hue-noir) 0%,
+  var(--hue-noir) 90%);
+}
+.skills ul {
+  padding: 1rem;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills li {
+  padding: 0 .5rem;
+}
+
+.projects {
+  background-image:
+  radial-gradient( circle farthest-corner at 10% 30%,
+  var(--hue-noir) 0%,
+  var(--hue-noir) 90%);
+  color: var(--hue-noir);
+}
+
+@media (width > 660px) {
+  .title {
+    font-size: 5rem;
+  }
+  .about, .skills {
+  flex-direction: row;
+  }
+  .gauche {
+    width: 50%;
+    margin: 2rem
+  }
+  .droite {
+    width: 50%;
+    margin: 0 5rem 0 0;
+  }
+  .about img {
+    min-width: 5rem;
+    height: 100%;
+    margin: auto;
+  }
 }
