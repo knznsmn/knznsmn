@@ -1,38 +1,34 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat.ttf') format('truetype');
+  font-family: 'Monomakh';
+  src: url('/fonts/Monomakh.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Cardo';
-  src: url('/fonts/Cardo.ttf') format('truetype');
+  font-family: 'Tenor Sans';
+  src: url('/fonts/TenorSans.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
   /* Colors */
-  --hue-viol: hsla(338, 100%, 29%, 1);
-  --hue-roug: hsla(337, 83%, 43%, 1);
-  --hue-rose: hsla(337, 50%, 72%, 1);
-  --hue-pink: hsla(338, 33%, 87%, 1);
-  --hue-army: hsla(88, 100%, 30%, 1);
-  --hue-vert: hsla(88, 83%, 45%, 1);
-  --hue-lime: hsla(88, 50%, 75%, 1);
-  --hue-jour: hsla(88, 33%, 90%, 1);
-
-  --background: var(--hue-lime);
-  --foreground: var(--hue-viol);
+  --hue-blan: #FFFFFF;
+  --hue-gris: #B4BEC9;
+  --hue-bleu: #DEEFE7;
+  --hue-vert: #159A9C;
+  --hue-noir: #002333;
+  --background: var(--hue-gris);
+  --foreground: var(--hue-noir);
 
 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--hue-viol);
-    --foreground: var(--hue-lime);
+    --background: var(--hue-noir);
+    --foreground: var(--hue-gris);
   }
 }
 /* Resets */
@@ -81,12 +77,12 @@ body {
   min-height: 100vh;
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Cardo', serif;
+  font-family: 'Tenor Sans', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Monomakh', sans-serif;
 }
 
 * {
