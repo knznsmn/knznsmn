@@ -83,6 +83,9 @@
   align-items: center;
   justify-content: center;
 }
+.projets h1 {
+  background: none;
+}
 .projets section {
   width: 90vw;
   display: grid;
@@ -93,6 +96,7 @@
 }
 .projets > section > div {
   height: 30vh;
+  max-height: 60rem;
   background-size: cover;
   border-radius: 1rem; 
   margin: .5rem;
