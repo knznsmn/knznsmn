@@ -1,26 +1,29 @@
 .container {
   text-align: center;
 }
-.container .gauche {
-  width: 50%;
-}
-.container .droite {
+.container .moitie {
+  display: flex;
   width: 100%;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.container p {
-  padding: 1rem;
+.moitie h1 {
+  margin: 0 3rem;
 }
-.title {
-  width: 100vw;
-  font-size: 4rem;
-  font-weight: 700;
-  opacity: 0.7;
-  letter-spacing: -.25rem;
-  margin-bottom: -2rem;
+.moitie p {
+  margin: 1rem;
+  padding: 4rem;
+}
+.moitie img {
+  width: 75%;
+  height: auto;
+  margin: auto;
 }
 
 /* Section Style */
-.portfolio, .about, .skills, .projects {
+.portfolio, .about, .skills, .projects, .contact {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -35,21 +38,23 @@
   var(--hue-noir) 90%);
   color: var(--hue-noir);
 }
-
-.about img {
-  min-width: 5rem;
-  height: 100%;
-  margin: auto;
-}
-.about h1 {
-  font-size: 1.5rem;
+.portfolio .title {
+  width: 100vw;
+  font-size: 4.5rem;
+  font-weight: 700;
+  opacity: 0.7;
+  letter-spacing: -.25rem;
+  margin-bottom: -1.5rem;
 }
 
 .skills {
   background-image:
   radial-gradient( circle farthest-corner at 10% 30%,
-  var(--hue-noir) 0%,
-  var(--hue-noir) 90%);
+  var(--hue-bleu) 0%,
+  var(--hue-vert) 90%);
+}
+.skills h1, .skills p {
+  color: var(--hue-noir);
 }
 .skills ul {
   padding: 1rem;
@@ -62,32 +67,83 @@
   padding: 0 .5rem;
 }
 
-.projects {
+.projets {
   background-image:
   radial-gradient( circle farthest-corner at 10% 30%,
-  var(--hue-noir) 0%,
+  var(--hue-vert) 0%,
   var(--hue-noir) 90%);
-  color: var(--hue-noir);
+  color: var(--hue-vert);
+  display: flex;
+  flex-direction: column;
+}
+.projets section {
+  width: 90vw;
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e e";
+}
+.projets > section > div {
+  border: solid 1px var(--hue-vert);
+  height: 30vh;
+  background-size: cover;
+}
+.projets > section > div:nth-child(1) {
+  grid-area: a;
+  background: url('/imgs/projets/nscp.jpg') no-repeat center center;
+}
+.projets > section > div:nth-child(2) {
+  grid-area: b;
+  background: url('/imgs/projets/50mm.jpg') no-repeat center center;
+}
+.projets > section > div:nth-child(3) {
+  grid-area: c;
+  background: url('/imgs/projets/mjajc.jpg') no-repeat center center;
+}
+.projets > section > div:nth-child(4) {
+  grid-area: d;
+  background: url('/imgs/projets/maftuha.jpg') no-repeat center center;
+}
+.projets > section > div:nth-child(5) {
+  grid-area: e;
+  background: url('/imgs/projets/amha.jpg') no-repeat center center;
 }
 
+.contact {
+  background-image:
+  radial-gradient( circle farthest-corner at 10% 30%,
+  var(--hue-vert) 0%,
+  var(--hue-noir) 90%);
+}
+.contact ul {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.contact li {
+  list-style: none;
+  padding: .5rem;
+}
 @media (width > 660px) {
-  .title {
+  .container .title {
     font-size: 5rem;
   }
   .about, .skills {
   flex-direction: row;
   }
-  .gauche {
-    width: 50%;
-    margin: 2rem
+  .projets section {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
-  .droite {
-    width: 50%;
-    margin: 0 5rem 0 0;
-  }
-  .about img {
-    min-width: 5rem;
-    height: 100%;
-    margin: auto;
+  .projets > section > div {
+    border: solid 1px var(--hue-vert);
+    flex: 1;
+    height: 60vh;
+    background-size: cover;
+    gap: .25rem;
   }
 }
