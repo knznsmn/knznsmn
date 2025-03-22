@@ -1,0 +1,177 @@
+/*******************************************************
+
+ Project name:             knznsmn
+ Author:                   Julius Cinco Cesar
+                           knznsmn@knznsmn.com
+                           @knznsmn
+
+ Date created:             March 22, 2025
+                           10:41:19
+
+*******************************************************/
+
+/* Global resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+#root, #__next {
+  isolation: isolate;
+}
+@font-face {
+	font-family: 'Cyber Alert';
+	src: url('../assets/fonts/CyberAlert.otf') format('opentype');
+}
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('../assets/fonts/JetBrainsMono.ttf');
+}
+@font-face {
+  font-family: 'i';
+  src:  url('../assets/fonts/i.eot');
+  src:  url('../assets/fonts/i.eot') format('embedded-opentype'),
+    url('../assets/fonts/i.ttf') format('truetype'),
+    url('../assets/fonts/i.woff') format('woff'),
+    url('../assets/fonts/i.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'i' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-terminal:before {
+  content: "\e90e";
+}
+.icon-lua:before {
+  content: "\e90f";
+  color: #2c2d72;
+}
+.icon-c:before {
+  content: "\e910";
+  color: #a8b9cc;
+}
+.icon-vim:before {
+  content: "\e911";
+  color: #019733;
+}
+.icon-facebook:before {
+  content: "\e912";
+  color: #1877f2;
+}
+.icon-vscode:before {
+  content: "\e913";
+  color: #007acc;
+}
+.icon-youtube:before {
+  content: "\e907";
+  color: #f00;
+}
+.icon-github:before {
+  content: "\e908";
+}
+.icon-pinterest:before {
+  content: "\e909";
+  color: #bd081c;
+}
+.icon-twitter:before {
+  content: "\e90a";
+}
+.icon-pr:before {
+  content: "\e900";
+  color: #ea77ff;
+}
+.icon-ae:before {
+  content: "\e901";
+  color: #d291ff;
+}
+.icon-ai:before {
+  content: "\e902";
+  color: #ff7c00;
+}
+.icon-ps:before {
+  content: "\e903";
+  color: #00c8ff;
+}
+.icon-js:before {
+  content: "\e904";
+  color: #f7df1e;
+}
+.icon-css:before {
+  content: "\e905";
+  color: #1572b6;
+}
+.icon-html:before {
+  content: "\e906";
+  color: #e34f26;
+}
+.icon-instagram:before {
+  content: "\e90c";
+  color: #e4405f;
+}
+.icon-home:before {
+  content: "\e90d";
+}
+.icon-quill:before {
+  content: "\e914";
+}
+.icon-dice:before {
+  content: "\e915";
+}
+.icon-project:before {
+  content: "\e92f";
+}
+.icon-spinner:before {
+  content: "\e97b";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+.icon-bookmarks:before {
+  content: "\e9d3";
+}
+.icon-embed:before {
+  content: "\ea7f";
+}
+.icon-brackets:before {
+  content: "\ea80";
+}
+.icon-console:before {
+  content: "\ea81";
+}

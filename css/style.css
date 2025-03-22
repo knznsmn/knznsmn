@@ -1,0 +1,137 @@
+/*******************************************************
+
+ Project name:             knznsmn
+ Author:                   Julius Cinco Cesar
+                           knznsmn@knznsmn.com
+                           @knznsmn
+
+ Date created:             March 22, 2025
+                           10:41:19
+
+*******************************************************/
+
+/* General Styling */
+:root {
+	/* Hues */
+  --hue-noir: hsla(0, 0%, 0%, 1);
+  --hue-dark: hsla(120, 6%, 36%, 1);
+  --hue-vert: hsla(129, 20%, 59%, 1);
+  --hue-blan: hsla(54, 100%, 94%, 1);
+  --hue-ciel: hsla(0, 41%, 89%, 1);
+  --hue-pink: hsla(0, 100%, 91%, 1);
+  --hue-rose: hsla(0, 100%, 87%, 1);
+  --tra-vert: hsla(129, 20%, 59%, 0.5);
+  --tra-blan: hsla(54, 100%, 94%, 0.63);
+
+	--color-main: var(--hue-blan);
+	--color-background: var(--hue-vert);
+
+	/* Dimensions */
+	--height-body: 100vh;
+	--height-header: 3.5rem;
+	--height-footer: 1.8rem;
+	--height-excess: calc(var(--height-header) + var(--height-footer));
+	--height-article: calc(var(--height-body) - var(--height-excess));
+}
+html {
+	background-color: var(--hue-noir);
+	background-image: linear-gradient(132deg, var(--hue-noir) 0%, var(--hue-vert) 100%);
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	--bgh: var(--tra-vert);
+  --hue: var(--tra-blan);
+  --box: .1rem;
+  --spc: 2rem;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background:
+		linear-gradient(90deg,
+		var(--bgh) calc(var(--spc) - var(--box)),
+		transparent 1%) center / var(--spc) var(--spc),
+		linear-gradient(var(--bgh) calc(var(--spc) - var(--box)),
+		transparent 1%) center / var(--spc) var(--spc),
+		var(--hue);
+		color: var(--color-main);
+		font-family: "JetBrains Mono", monospace;
+		font-optical-sizing: auto;
+		scroll-snap-type: y mandatory;
+
+}
+h1, h2, h3, h4, h5 {
+	font-family: "Cyber Alert", monospace;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: var(--hue-pink);
+}
+a:visited {
+	color: var(--hue-rose);
+}
+a:focus {
+	filter: invert(1);
+}
+a:hover {
+	filter: invert(1);
+}
+a:active {
+	filter: invert(.5);
+}
+header {
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 42;
+}
+nav ul {
+	display: flex;
+	justify-content: center;
+	backdrop-filter: blur(.15rem);
+}
+nav ul li {
+	margin: 1rem;
+	list-style: none;
+}
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+article {
+	border: .05rem solid teal;
+	width: 100vw;
+	height: 100vh;
+	scroll-snap-align: start;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer {
+	width: 100%;
+	height: var(--height-footer);
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-size: .85rem;
+}
+footer span::before {
+	display: inline-block;
+	content: '\00A9';
+	transform: rotate(180deg);
+	margin: 0 .15rem .5rem;
+}
+
