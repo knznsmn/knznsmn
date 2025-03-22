@@ -89,7 +89,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/notes', label: 'Notes', position: 'notes'},
+          {to: '/notes', label: 'Notes', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/knznsmn/knznsmn',
