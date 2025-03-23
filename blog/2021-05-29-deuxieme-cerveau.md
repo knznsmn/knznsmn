@@ -1,14 +1,10 @@
 ---
-slug: long-blog-post
-title: Long Blog Post
+slug: deuxieme-cerveau
+title: Deuxieme Cerveau
 authors: knznsmn
 tags: []
 ---
-
-This is the summary of a very long blog post,
-
-Use a `<!--` `truncate` `-->` comment to limit blog post size in the list view.
-
+This is my second brain.
 <!-- truncate -->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet

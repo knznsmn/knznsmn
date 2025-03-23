@@ -1,11 +1,11 @@
 ---
-slug: first-blog-post
-title: First Blog Post
+slug: hello-world
+title: Hello, World!
 authors: [knznsmn]
 tags: []
 ---
 
-Lorem ipsum dolor sit amet...
+This is the first blog post.
 
 <!-- truncate -->
 
