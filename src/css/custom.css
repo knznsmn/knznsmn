@@ -65,6 +65,7 @@ html::-webkit-scrollbar {
 }
 .navbar {
   height: var(--height-navbar);
+  background: var(--hue-coin);
 }
 .footer {
   height: var(--height-footer);

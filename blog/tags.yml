@@ -15,5 +15,6 @@ unix:
 
 webdev:
   label: Web Development
-  permalink: /hola
-  description: Hola tag description
+  permalink: /web
+  description: Web development
+
