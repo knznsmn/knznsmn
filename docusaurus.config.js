@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Feuilles',
-  tagline: 'Second Brain on the cloud!',
-  favicon: 'img/favicon.ico',
+  title: 'knznsmn 🐧',
+  tagline: 'Codes for Days!',
+  favicon: 'img/theme/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://www.knznsmn.com',
@@ -75,12 +75,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/theme/social-card.jpg',
       navbar: {
         title: 'knznsmn',
         logo: {
           alt: 'knznsmn Logo',
-          src: 'img/logo.svg',
+          src: 'img/theme/logo.svg',
         },
         items: [
           {
@@ -91,8 +91,8 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'right'},
           {
-            href: 'https://github.com/knznsmn/knznsmn',
-            label: 'GitHub',
+            href: '/about',
+            label: 'About',
             position: 'right',
           },
         ],

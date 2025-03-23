@@ -3,11 +3,12 @@
  * and scoped locally.
  */
 
-.heroBanner {
+.header {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  height: calc(100vh - var(--height-navbar));
 }
 
 @media screen and (max-width: 996px) {
