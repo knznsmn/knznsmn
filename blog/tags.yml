@@ -1,19 +1,19 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+c:
+  label: C
+  permalink: /c
+  description: The C Programming Language
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+swift:
+  label: Swift
+  permalink: /swift
+  description: The Swift Language
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+unix:
+  label: Unix
+  permalink: /unix
+  description: Unix Systems
 
-hola:
+:
   label: Hola
   permalink: /hola
   description: Hola tag description

@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Feuilles',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Second Brain on the cloud!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -26,7 +26,7 @@ const config = {
   projectName: 'knznsmn', // Usually your repo name.
   trailingSlash: false,
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -86,10 +86,9 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
+            position: 'right',
             label: 'Docs',
           },
-          {to: '/notes', label: 'Notes', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'right'},
           {
             href: 'https://github.com/knznsmn/knznsmn',
