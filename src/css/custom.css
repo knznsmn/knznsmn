@@ -18,6 +18,8 @@
   --hue-coin: hsla(132, 4%, 76%, 1);
   --hue-gray: hsla(219, 8%, 53%, 1);
   --hue-viol: hsla(270, 18%, 27%, 1);
+  --tra-bleu: hsla(208, 31%, 35%, .8);
+  --tra-beig: hsla(71, 53%, 87%, .05);
 
   --ifm-color-primary: #1d2d44;
   --ifm-color-primary-dark: #1a293d;
@@ -29,6 +31,10 @@
   --ifm-background-color: #f0ebd8;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Visages */
+  --background-dotted: radial-gradient(circle, #1d2d44 1px, transparent 1px);
+  --background-size: 1.5rem 1.5rem;
 
   /* Measurements */
   --height-navbar: 3.75rem;
