@@ -1,8 +1,5 @@
 # HTML In Depth
 
-1. this ordered seed list will be replaced by the toc
-{:toc}
-
 ## Semantic and Meta Tags
 
 ## User Inputs and Forms
@@ -538,7 +535,7 @@ A referrer is the HTTP header that lets the page know who is loading it. This at
 - `strict-origin` The origin of the document is sent as the referrer only when using the same protocol security level (HTTPS to HTTPS) 
 
 **`sandbox`**
-To enforce greater security, a sandbox applies extra restrictions to the content in the <iframe>. To lift particular restrictions, an attribute value (permission token) is used. The common permission tokens are listed below:
+To enforce greater security, a sandbox applies extra restrictions to the content in the `<iframe>`. To lift particular restrictions, an attribute value (permission token) is used. The common permission tokens are listed below:
 - `allow-downloads` Allows the user to download an item
 - `allow-forms` Allows the user to submit forms
 - `allow-modals` The resource can open modal windows
@@ -548,7 +545,6 @@ To enforce greater security, a sandbox applies extra restrictions to the content
 - `allow-scripts` Lets the resource run scripts without creating popup windows
 
 When the value of this attribute is empty, all restrictions are applied. To apply more than one permission, use a space-separated list.
-{:.note}
 
 **`src`**
 The URL of the page to embed in the `<iframe>`. Using the value about:blank would embed an empty page.
