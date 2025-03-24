@@ -3,18 +3,22 @@
 ## Semantic and Meta Tags
 
 ## User Inputs and Forms
+
 ### Input types
+
 #### Button
+
 This displays a clickable button and it’s mostly used in HTML forms to activate a script when clicked.
 `<input type="button" value="Click me" onclick="msg()" />`
 
 ```html
 <button onclick="alert('Are you sure you want to continue?')">
-	<img src="https://yourserver.com/button_img.jpg" alt="Submit the form" height="64" width="64">
+    <img src="https://yourserver.com/button_img.jpg" alt="Submit the form" height="64" width="64">
 </button>
 ```
 
 #### Checkbox
+
 Defines a check box allowing single values to be selected or deselected. They are used to let a user select one or more options of a limited number of choices.
 
 ```html
@@ -25,6 +29,7 @@ Defines a check box allowing single values to be selected or deselected. They ar
 ```
 
 #### Radio
+
 Displays a radio button, allowing only a single value to be selected out of multiple choices. They are normally presented in radio groups, which is a collection of radio buttons describing a set of related options that share the same "name" attribute.
 
 ```html
@@ -35,16 +40,17 @@ Displays a radio button, allowing only a single value to be selected out of mult
 ```
 
 #### Submit
+
 Displays a submit button for submitting all values from an HTML form to a form-handler, typically a server. The form-handler is specified in the form’s "action" attribute:
 
 ```html
 <form action="myserver.com" method="POST">
-	  …
-	<input type="submit" value="Submit" />
+    <input type="submit" value="Submit" />
 </form>
 ```
 
 #### Text
+
 Defines a basic single-line text field that a user can enter text into.
 
 ```html
@@ -53,6 +59,7 @@ Defines a basic single-line text field that a user can enter text into.
 ```
 
 #### Password
+
 Defines a single-line text field whose value is obscured, suited for sensitive information like passwords.
 
 ```html
@@ -61,6 +68,7 @@ Defines a single-line text field whose value is obscured, suited for sensitive i
 ```
 
 #### Date
+
 Displays a control for entering a date with no time (year, month and day).
 
 ```html
@@ -69,6 +77,7 @@ Displays a control for entering a date with no time (year, month and day).
 ```
 
 #### Datetime-local
+
 Defines a control for entering a date and time, including the year, month and day, as well as the time in hours and minutes.
 
 ```html
@@ -77,6 +86,7 @@ Defines a control for entering a date and time, including the year, month and da
 ```
 
 #### Email
+
 Defines a field for an email address. It’s similar to a plain text input, with the addition that it validates automatically when submitted to the server.
 
 ```html
