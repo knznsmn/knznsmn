@@ -14,10 +14,10 @@ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Install tools:
-- [git](git.md)
-- [gcc](gcc.md)
-- [vim](vim.md)
-- [openssh](ssh.md)
+- git
+- gcc
+- vim
+- openssh
 
 Always run `apt update` first before installing any software; otherwise, your Linux machine might become Windows, and you'd regret it. Just kidding. In fact, Windows is a great OS, not only for games. Visual Studio is an excellent IDE for developing a variety of applications for all platforms, and it can only be installed on a Windows device, if I'm not mistaken.
 
@@ -131,7 +131,7 @@ I don't understand most of the errors (and even the fixes) of Linux system. But 
 sudo dpkg-reconfigure libdvd-pkg
 ```
 ### Fonts
-* [fonts](./) - install fonts at `~/.local/share/fonts`
+* fonts- install fonts at `~/.local/share/fonts`
 
 [^1]: [Github Inc. (2024). Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)
 [^2]: [deVault, D. (2019, Dec 30). Managing my dotfiles as a git repository](https://drewdevault.com/2019/12/30/dotfiles.html))
