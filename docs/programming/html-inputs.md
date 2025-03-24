@@ -1,19 +1,4 @@
----
-layout: note
-title: 'HTML5'
-caption: Use structured semantic data to control how web sites appear to the user. You will create semantic HTML to structure webpages to look good and work well.
-description: >
- Use structured semantic data to control how web sites appear to the user. Create semantic HTML to structure webpages to look good and work well.
-date: '26-05-2024'
-image: 
-  path: /assets/img/notes/html5.jpg
-sitemap: true
-links:
-  - title: Link
-    url: https://www.jccesar.com/
----
-
-## HTML In Depth
+# HTML In Depth
 
 1. this ordered seed list will be replaced by the toc
 {:toc}
