@@ -18,3 +18,7 @@ webdev:
   permalink: /web
   description: Web development
 
+html:
+  label: HTML
+  permalink: /html
+  description: HTML notes and resources
