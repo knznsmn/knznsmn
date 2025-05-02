@@ -20,6 +20,19 @@
   --hue-viol: hsla(270, 18%, 27%, 1);
   --tra-bleu: hsla(208, 31%, 35%, .2);
   --tra-beig: hsla(71, 53%, 20%, .04);
+  --background: var(--hue-blan);
+  --foreground: var(--hue-dark);
+
+  --ifm-color-primary: hsl(215, 40%, 19%);
+  --ifm-color-primary-dark: hsl(214, 40%, 17%);
+  --ifm-color-primary-darker: hsl(216, 40%, 16%);
+  --ifm-color-primary-darkest: #142030;
+  --ifm-color-primary-light: hsl(215, 40%, 21%);
+  --ifm-color-primary-lighter: hsl(215, 41%, 22%);
+  --ifm-color-primary-lightest: hsl(215, 40%, 25%);
+  --ifm-background-color: var(--background);
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   /* Pencils */
   --background-size: 1.5rem 1.5rem;
@@ -30,20 +43,7 @@
     linear-gradient(var(--tra-beig) .05rem, transparent .05rem),
     linear-gradient(90deg, var(--tra-beig) .05rem, transparent .05rem);
   --box-shadow: 0 0 0.5rem hsla(210, 50%, 50%, 0.2);
-
-  --ifm-color-primary: #1d2d44;
-  --ifm-color-primary-dark: #1a293d;
-  --ifm-color-primary-darker: #19263a;
-  --ifm-color-primary-darkest: #142030;
-  --ifm-color-primary-light: #20324b;
-  --ifm-color-primary-lighter: #21344e;
-  --ifm-color-primary-lightest: #263b58;
-  --ifm-background-color: #f0ebd8;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  background-color: transparent;
-  background-image: var(--background-grid-bleu);
-  background-size: var(--background-size);
+  
 
 
   /* Visages */
@@ -57,19 +57,15 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #f0ebd8;
-  --ifm-color-primary-dark: #e3dab7;
-  --ifm-color-primary-darker: #ddd2a7;
-  --ifm-color-primary-darkest: #cab875;
-  --ifm-color-primary-light: #fdfcf9;
-  --ifm-color-primary-lighter: #ffffff;
-  --ifm-color-primary-lightest: #ffffff;
-  --ifm-background-color: #1d2d44;
+  --ifm-color-primary: var(--background);
+  --ifm-color-primary-dark: hsl(48, 44%, 80%);
+  --ifm-color-primary-darker: hsl(48, 44%, 76%);
+  --ifm-color-primary-darkest: hsl(47, 45%, 63%);
+  --ifm-color-primary-light: hsl(45, 50%, 98%);
+  --ifm-color-primary-lighter: hsl(0, 0%, 100%);
+  --ifm-color-primary-lightest: hsl(0, 0%, 100%);
+  --ifm-background-color: var(--foreground);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  background-color: transparent;
-  background-image: var(--background-grid-beig); 
-  background-size: var(--background-size);
-  box-shadow: var(--box-shadow);
 }
 
 /* General Styling */
@@ -81,7 +77,6 @@ html::-webkit-scrollbar {
   display: none;
 }
 article {
-  background: var(--tra-beig);
   backdrop-filter: blur(.2rem);
   box-shadow: var(--box-shadow);
   padding: 1rem;
