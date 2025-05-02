@@ -9,6 +9,19 @@
   height: 100vh;
 }
 
+.page article {
+  box-shadow: none;
+}
+.page h1 {
+  font-size: 3rem;
+}
+.page h1 a {
+  transition: font-size 0.5s ease;
+}
+.page h1 a:hover {
+  font-size: smaller;
+  text-decoration: none;
+}
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;

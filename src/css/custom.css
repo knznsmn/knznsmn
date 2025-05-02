@@ -1,10 +1,9 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
+@font-face {
+  font-family: 'Printf';
+  src: url(../../static/fonts/printf.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   /* Hues */
   --hue-noir: hsl(222, 43%, 9%);
@@ -75,6 +74,9 @@ html {
 }
 html::-webkit-scrollbar {
   display: none;
+}
+h1, h2, h3 {
+  font-family: 'Printf', monospace;
 }
 article {
   backdrop-filter: blur(.2rem);
