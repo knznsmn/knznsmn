@@ -1,114 +1,16 @@
-@font-face {
-  font-family: 'Printf';
-  src: url(../../static/fonts/printf.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+/* Docusaurus default: only override if you want to customize! */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('./resets.css');
+
 :root {
-  /* Hues */
-  --hue-noir: hsl(222, 43%, 9%);
-  --hue-dark: hsl(215, 40%, 19%);
-  --hue-bleu: hsl(208, 31%, 35%);
-  --hue-ciel: hsl(214, 25%, 56%);
-  --hue-blan: hsl(47, 44%, 89%);
-  --hue-acce: hsl(355, 78%, 56%);
-  --hue-lime: hsla(62, 41%, 57%, 1);
-  --hue-beig: hsla(71, 53%, 87%, 1);
-  --hue-coin: hsla(132, 4%, 76%, 1);
-  --hue-gray: hsla(219, 8%, 53%, 1);
-  --hue-viol: hsla(270, 18%, 27%, 1);
-  --tra-bleu: hsla(208, 31%, 35%, .2);
-  --tra-beig: hsla(71, 53%, 20%, .04);
-  --background: var(--hue-blan);
-  --foreground: var(--hue-dark);
-
-  --ifm-color-primary: hsl(215, 40%, 19%);
-  --ifm-color-primary-dark: hsl(214, 40%, 17%);
-  --ifm-color-primary-darker: hsl(216, 40%, 16%);
-  --ifm-color-primary-darkest: #142030;
-  --ifm-color-primary-light: hsl(215, 40%, 21%);
-  --ifm-color-primary-lighter: hsl(215, 41%, 22%);
-  --ifm-color-primary-lightest: hsl(215, 40%, 25%);
-  --ifm-background-color: var(--background);
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-
-  /* Pencils */
-  --background-size: 1.5rem 1.5rem;
-  --background-grid-bleu:
-    linear-gradient(var(--tra-bleu) .05rem, transparent .05rem),
-    linear-gradient(90deg, var(--tra-bleu) .05rem, transparent .05rem);
-  --background-grid-beig:
-    linear-gradient(var(--tra-beig) .05rem, transparent .05rem),
-    linear-gradient(90deg, var(--tra-beig) .05rem, transparent .05rem);
-  --box-shadow: 0 0 0.5rem hsla(210, 50%, 50%, 0.2);
   
-
-
-  /* Visages */
-  --background-dotted: radial-gradient(circle, var(--hue-ciel) .1rem, transparent .1rem);
-
-  /* Measurements */
-  --height-navbar: 3.75rem;
-  --height-footer: 5rem;
-  --height-excess: calc(var(--height-footer) + var(--height-navbar));
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: var(--background);
-  --ifm-color-primary-dark: hsl(48, 44%, 80%);
-  --ifm-color-primary-darker: hsl(48, 44%, 76%);
-  --ifm-color-primary-darkest: hsl(47, 45%, 63%);
-  --ifm-color-primary-light: hsl(45, 50%, 98%);
-  --ifm-color-primary-lighter: hsl(0, 0%, 100%);
-  --ifm-color-primary-lightest: hsl(0, 0%, 100%);
-  --ifm-background-color: var(--foreground);
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* General Styling */
-html {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-html::-webkit-scrollbar {
-  display: none;
-}
-h1, h2, h3 {
-  font-family: 'Printf', monospace;
-}
-article {
-  backdrop-filter: blur(.2rem);
-  box-shadow: var(--box-shadow);
-  padding: 1rem;
-  border-radius: .6rem;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Special Elite', serif;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  display: inline-block;
-  flex-direction: column;
-}
-tr, thead, tbody {
-  width: 100%;
-}
-.display-flex {
-  display: flex;
-}
-.width-50 {
-  width: 50%;
-}
-.float-right {
-  float: right;
-}
-.navbar[data-theme='dark'] {
-  height: var(--height-navbar);
-  background: var(--hue-coin);
-}
-.footer {
-  height: var(--height-footer);
-  font-size: .75rem;
-}

@@ -46,7 +46,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./src/components/sidebars.js'),
         },
         blog: {
           showReadingTime: true,

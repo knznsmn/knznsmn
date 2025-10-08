@@ -1,6 +1,8 @@
+
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
+import Search from '../components/Search';
 
 
 export default function Home() {
@@ -9,14 +11,12 @@ export default function Home() {
     <main className={styles.page}>
       <article>
         <h1>
-          <Link
-            href='/docs'
-            title='Go to docs'
-          >
+          <Link href='/docs' title='Go to docs'>
             ft_printf
           </Link>
         </h1>
-      </article> 
-    </main> 
+      </article>
+      <Search />
+    </main>
   );
 }
