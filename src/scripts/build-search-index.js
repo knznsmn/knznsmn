@@ -5,9 +5,10 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
-const DOCS_DIR = path.join(__dirname, '/docs');
-const BLOG_DIR = path.join(__dirname, '/blog');
-const OUTPUT_FILE = path.join(__dirname, '/static/data/contents.json');
+const DOCS_DIR = path.join(__dirname, '../../docs');
+const BLOG_DIR = path.join(__dirname, '../../blog');
+const OUTPUT_DIR = path.join(__dirname, '../../static/data');
+const OUTPUT_FILE = path.join(OUTPUT_DIR, 'contents.json');
 
 function walkDir(dir, ext = ['.md', '.mdx']) {
   let results = [];
@@ -63,6 +64,11 @@ function buildIndex() {
       index.push(extractContent(f, BLOG_DIR, 'blog'));
     });
   }
+  // Ensure output directory exists
+  if (!fs.existsSync(OUTPUT_DIR)) {
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  }
+
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(index, null, 2));
   console.log(`Indexed ${index.length} documents.`);
 }

@@ -27,7 +27,6 @@ const config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -39,6 +38,13 @@ const config = {
   themes: [
     '@docusaurus/theme-live-codeblock'
   ],
+
+  // Migrate deprecated config: move markdown hooks here
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   presets: [
     [

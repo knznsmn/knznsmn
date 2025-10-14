@@ -1,6 +1,7 @@
 {
   "label": "📐 Graphic Design",
-  "position": 2,
+  "position": 4,
+  "collapsed": false,
   "link": {
     "type": "generated-index",
     "description": "Graphic Design Notes"
