@@ -5,9 +5,9 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
-const DOCS_DIR = path.join(__dirname, '../../../docs');
-const BLOG_DIR = path.join(__dirname, '../../../blog');
-const OUTPUT_FILE = path.join(__dirname, '../../../static/data/contents.json');
+const DOCS_DIR = path.join(__dirname, '/docs');
+const BLOG_DIR = path.join(__dirname, '/blog');
+const OUTPUT_FILE = path.join(__dirname, '/static/data/contents.json');
 
 function walkDir(dir, ext = ['.md', '.mdx']) {
   let results = [];
