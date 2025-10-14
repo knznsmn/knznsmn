@@ -1,7 +1,7 @@
 .searchBox {
   width: 61.8%;
   margin: 2.5rem auto 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 2.5rem 2rem;
   background: var(--glass, rgba(255,255,255,0.85));
   border-radius: var(--radius, 1.2rem);
   box-shadow: var(--shadow, 0 4px 24px rgba(60,60,100,0.08));
@@ -97,5 +97,10 @@
   }
   .searchResultSnippet {
     color: var(--muted-text, #94a3b8);
+  }
+}
+@media (width < 360px) {
+  .searchBox {
+    width: 95%;
   }
 }
