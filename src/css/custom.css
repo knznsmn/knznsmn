@@ -3,29 +3,136 @@
 @import url('./resets.css');
 
 :root {
-  
+  /* Minimalist color system - light mode */
+  --bg: #f7f9fb;            /* page background */
+  --surface: #ffffff;       /* cards, panels */
+  --muted: #f1f5f9;         /* subtle surfaces / borders */
+  --text: #0f1724;         /* main text */
+  --muted-text: #475569;    /* secondary text */
+  --primary: #0ea5a4;      /* gentle teal */
+  --primary-600: #059b99;  /* darker primary */
+  --accent: #f97316;       /* warm accent */
+  --border: #e6eef3;       /* subtle border */
+  --glass: rgba(255,255,255,0.6);
+  --shadow: 0 8px 30px rgba(15,23,36,0.06);
+  --radius: 12px;
 }
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #f7f9fb;
+  background-color: var(--bg);
   background-image:
     linear-gradient(to right, rgba(60, 60, 100, 0.06) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(60, 60, 100, 0.06) 1px, transparent 1px);
   background-size: 32px 32px;
+  background-attachment: fixed; /* keep background fixed on scroll */
+  color: var(--text);
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode palette (matches the light scheme) */
+    --bg: #0b1020;          /* deep navy */
+    --surface: #0f1724;     /* panel surface */
+    --muted: #0b1220;       /* subtle surfaces */
+    --text: #e6eef3;        /* main text */
+    --muted-text: #94a3b8;  /* secondary text */
+    --primary: #34d399;     /* teal-green (brighter on dark) */
+    --primary-600: #10b981;
+    --accent: #fb923c;      /* warm accent */
+    --border: rgba(255,255,255,0.04);
+    --glass: rgba(10,12,18,0.6);
+    --shadow: 0 8px 30px rgba(2,6,23,0.6);
+    --radius: 12px;
+  }
   body {
-    background-color: #181c24;
+    background-color: var(--bg);
     background-image:
       linear-gradient(to right, rgba(180, 200, 255, 0.07) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(180, 200, 255, 0.07) 1px, transparent 1px);
     background-size: 32px 32px;
+    background-attachment: fixed; /* keep background fixed on scroll */
+    color: var(--text);
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Special Elite', serif;
+}
+
+/* Docs / Blog content styles - readable and compatible with light/dark modes */
+.markdown, .markdown * {
+  color: var(--text);
+}
+
+.markdown a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.markdown p {
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4 {
+  color: var(--text);
+  margin-top: 1.4em;
+  margin-bottom: 0.6em;
+}
+
+/* Code blocks */
+.markdown pre, .markdown code {
+  background: var(--muted);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+}
+
+.markdown pre {
+  padding: 1rem;
+  overflow: auto;
+}
+
+/* Blockquotes */
+.markdown blockquote {
+  border-left: 4px solid var(--muted-text);
+  padding-left: 1rem;
+  color: var(--muted-text);
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.02));
+  border-radius: 6px;
+}
+
+/* Tables */
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.markdown th, .markdown td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+}
+.markdown thead th {
+  background: var(--surface);
+}
+
+/* Images responsive */
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Small utilities for surfaces */
+.card, .hero, .post {
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+/* Ensure code inline contrast on dark backgrounds */
+.markdown code {
+  background: rgba(0,0,0,0.04);
 }
 
