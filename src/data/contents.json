@@ -1,0 +1,15 @@
+{
+    "website": {
+        "title": "Home | knznsmn",
+        "description": "Welcome to my personal website where I share my projects and blog posts.",
+        "keywords": ["personal", "website", "blog", "projects"],
+        "author": "knznsmn",
+        "icon": "/images/logo.png",
+        "domain": "https://knznsmn.com"
+    },
+    "author": {
+        "name": "knznsmn",
+        "email": "hello@knznsmn.com",
+        "bio": "A passionate developer and writer."
+    }
+}
